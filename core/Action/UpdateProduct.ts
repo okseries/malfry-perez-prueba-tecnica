@@ -12,17 +12,17 @@ export const UpdateProduct  = async (id: string, data: Partial<Product>) =>
 
     try {
 
-        // const response  = await axios.get(`http://localhost:3000/api/productos/${id}`)
+        const response  = await axios.get(`http://localhost:3000/productos/${id}`)
 
-        // console.log("response", response.data);
+        console.log("response", response.data);
 
-        // if (!response.data)
-        // {
-        //     return {message: "No se encontró el producto"};
-        // }
+        if (!response.data)
+        {
+            return {message: "No se encontró el producto"};
+        }
 
         console.log("Paso del la peticion get");
-        await axios.patch(`http://localhost:3000/productos/1`, {
+        await axios.patch(`http://localhost:3000/productos/${id}`, {
             nombre,
             precio,
             cantidad
