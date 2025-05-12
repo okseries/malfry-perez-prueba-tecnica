@@ -1,0 +1,16 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Prueba 02",
+      "precio": 88,
+      "cantidad": 8
+    },
+    {
+      "id": "2",
+      "nombre": "Laptop",
+      "precio": 25000,
+      "cantidad": 5
+    }
+  ]
+}
